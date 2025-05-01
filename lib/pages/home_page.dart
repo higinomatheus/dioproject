@@ -39,6 +39,19 @@ class _HomePageState extends State<HomePage> {
               "O número gerado foi: $randomNumber",
               style: TextStyle(fontSize: 20),
               // style: GoogleFonts.acme(fontSize: 20),
+            ),
+            Row(
+              children: [
+                Expanded(
+                    flex: 2,
+                    child: Container(color: Colors.red, child: Text("10"))),
+                Expanded(
+                    flex: 1,
+                    child: Container(color: Colors.blue, child: Text("20"))),
+                Expanded(
+                    flex: 1,
+                    child: Container(color: Colors.green, child: Text("30")))
+              ],
             )
           ],
         ),
