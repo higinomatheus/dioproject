@@ -32,7 +32,13 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Text("Ações do usuário", style: TextStyle(fontSize: 20)),
+            SizedBox(
+                height: 100,
+                width: 100,
+                child: Container(
+                    color: Colors.red,
+                    child: Text("Ações do usuário",
+                        style: TextStyle(fontSize: 20)))),
             Text("Foi clicado $quantityClicks vezes",
                 style: TextStyle(fontSize: 20)),
             Text(
